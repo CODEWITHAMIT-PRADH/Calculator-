@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="calculator">
+  <input id="display" disabled value="0">
+  <button onclick="press('1')">1</button>
+  <button onclick="press('2')">2</button>
+  <button onclick="press('3')">3</button>
+  <button onclick="press('=')">=</button>
+</div>
+
+<div id="vault" style="display:none">
+  <h2>Vault</h2>
+  <input type="file" id="fileInput">
+  <button onclick="upload()">Upload Encrypted</button>
+  <div id="files"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
